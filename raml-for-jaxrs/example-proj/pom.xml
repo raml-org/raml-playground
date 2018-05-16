@@ -45,7 +45,7 @@
                 <groupId>org.raml.jaxrs</groupId>
                 <artifactId>raml-to-jaxrs-maven-plugin</artifactId>
                 <configuration>
-                    <ramlFile>${project.build.resources[0].directory}/example_json_schema.raml</ramlFile>
+                    <ramlFile>${project.build.resources[0].directory}/api.raml</ramlFile>
                     <resourcePackage>example.jsonschema</resourcePackage>
                     <jsonMapper>jackson2</jsonMapper>
                     <jsonMapperConfiguration>

@@ -18,21 +18,32 @@ package server.tracks;
 import example.jsonschema.Track;
 import example.jsonschema.Tracks;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.HashMap;
+
 /**
  * Created by Jean-Philippe Belanger on 11/11/16. Just potential zeroes and ones
  */
 public class TracksImpl implements Tracks {
 
+  public static HashMap<String, Track> tracksMap = new HashMap<String, Track>();
+
   @Override
   public GetTracksResponse getTracks() {
-    Track track = new Track();
-    track.setAlbumId("17");
-    track.setSongTitle("Booyakasha");
-    return GetTracksResponse.respond200WithApplicationJson(track);
+    List<Track> tracks = new ArrayList<Track>(this.tracksMap.values());
+    return GetTracksResponse.respond200WithApplicationJson(tracks);
   }
 
   @Override
-  public void postTracks(Track entity) {
+  public PostTracksResponse postTracks(Track entity) {
+    this.tracksMap.put(entity.getId(), entity);
+    return PostTracksResponse.respond200WithApplicationJson(entity);
+  }
 
+  @Override
+  public GetTracksByIdResponse getTracksById(String id) {
+    return GetTracksByIdResponse.respond200WithApplicationJson(
+        this.tracksMap.get(id));
   }
 }

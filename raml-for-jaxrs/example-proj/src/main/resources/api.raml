@@ -17,11 +17,16 @@ uses:
         200:
           body:
             application/json:
-              type: Track[]
+              type: TracksLib.Track[]
   post:
     body:
       application/json:
-        type: Track
+        type: TracksLib.Track
+    responses:
+        200:
+          body:
+            application/json:
+              type: TracksLib.Track
 
   /{id}:
     uriParameters:
@@ -31,4 +36,4 @@ uses:
         200:
           body:
             application/json:
-              type: TracksLib.Track
+              type: Track

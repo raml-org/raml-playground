@@ -5,7 +5,7 @@
   "required": true,
   "properties": {
     "id": {
-      "type": "integer",
+      "type": "string",
       "required": true
     },
     "title": {
