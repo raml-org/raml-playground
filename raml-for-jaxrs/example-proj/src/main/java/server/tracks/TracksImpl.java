@@ -23,7 +23,6 @@ import example.jsonschema.Tracks;
  */
 public class TracksImpl implements Tracks {
 
-
   @Override
   public GetTracksResponse getTracks() {
     Track track = new Track();
@@ -33,8 +32,7 @@ public class TracksImpl implements Tracks {
   }
 
   @Override
-  public void putTracks(Track entity) {
-
+  public void postTracks(Track entity) {
 
   }
 }
