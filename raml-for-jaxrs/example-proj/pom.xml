@@ -10,7 +10,7 @@
         <version>3.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>simple-json-example</artifactId>
+    <artifactId>ricks-example</artifactId>
     <properties>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
@@ -57,7 +57,7 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>server.tracks.StartServer</mainClass>
+                    <mainClass>server.ricks.StartServer</mainClass>
                 </configuration>
                 <executions>
                     <execution>

@@ -13,7 +13,7 @@
  * either express or implied. See the License for the specific
  * language governing permissions and limitations under the License.
  */
-package server.tracks;
+package server.ricks;
 
 import org.eclipse.jetty.server.Server;
 import org.glassfish.jersey.jetty.JettyHttpContainerFactory;
@@ -22,14 +22,11 @@ import org.glassfish.jersey.server.ResourceConfig;
 import javax.ws.rs.core.UriBuilder;
 import java.net.URI;
 
-/**
- * Created by Jean-Philippe Belanger on 11/3/16. Just potential zeroes and ones
- */
 public class StartServer {
 
   public static void main(String[] args) throws Exception {
     URI baseUri = UriBuilder.fromUri("http://localhost/").port(9998).build();
-    ResourceConfig config = new ResourceConfig(TracksImpl.class);
+    ResourceConfig config = new ResourceConfig(RicksImpl.class);
     Server server = JettyHttpContainerFactory.createServer(baseUri, config);
     server.start();
   }

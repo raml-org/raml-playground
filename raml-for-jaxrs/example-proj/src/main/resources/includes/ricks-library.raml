@@ -1,0 +1,12 @@
+#%RAML 1.0 Library
+
+types:
+  Rick:
+    type: object
+    properties:
+      slug: string
+      name:
+        type: string
+        minLength: 3
+      age: integer
+      inCouncil: boolean

@@ -1,39 +1,39 @@
 #%RAML 1.0
-title: Tracks
+title: Ricks API
 version: v1
 baseUri: https://api.github.com
 mediaType: application/json
 
 types:
-  Track: !include includes/track.json
+  Rick: !include includes/rick.json
 
 uses:
-  TracksLib: includes/tracks-library.raml
+  RicksLib: includes/ricks-library.raml
 
-/tracks:
-  description: The search resource
+/ricks:
+  description: Crucial information about Ricks
   get:
     responses:
         200:
           body:
             application/json:
-              type: TracksLib.Track[]
+              type: RicksLib.Rick[]
   post:
     body:
       application/json:
-        type: TracksLib.Track
+        type: RicksLib.Rick
     responses:
         200:
           body:
             application/json:
-              type: TracksLib.Track
+              type: RicksLib.Rick
 
-  /{id}:
+  /{slug}:
     uriParameters:
-      id: string
+      slug: string
     get:
       responses:
         200:
           body:
             application/json:
-              type: Track
+              type: Rick

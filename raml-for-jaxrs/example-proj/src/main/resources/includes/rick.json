@@ -4,19 +4,22 @@
   "id": "http://jsonschema.net",
   "required": true,
   "properties": {
-    "id": {
+    "slug": {
       "type": "string",
       "required": true
     },
-    "title": {
-      "type": "string",
-      "required": true
-    },
-    "albumId": {
+    "name": {
       "type": "string",
       "required": true,
-      "minLength": 36,
-      "maxLength": 36
+      "minLength": 3
+    },
+    "age": {
+      "type": "integer",
+      "required": true
+    },
+    "inCouncil": {
+      "type": "boolean",
+      "required": true
     }
   }
 }
