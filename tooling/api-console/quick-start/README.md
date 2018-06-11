@@ -4,17 +4,24 @@ tags: ['RAML', 'tutorial']
 license: 'cc-40-by'
 ---
 
-# Intro to <project_name>
+# Intro to api-console
 
-This is an introduction to <project_name>. <project_name> is a tool that <take_short_description_from_repo>.
+This is an introduction to api-console. api-console is a tool that generates mobile-friendly web documentation based on RAML documents. In addition to providing documentation, the tool provides the capability for users to try out requests on the fly.
 
 ## Install
 
-<steps_to_install>
-
+```sh
+sudo npm install -g api-console-cli
+```
 
 ## Run
 
-<steps_to_run>
+```sh
+wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
+api-console build ./api.raml
+api-console serve build/
+```
 
-<script src="https://gist.github.com/6407f4f4e257742e733d79529e1288b0"></script>
+
+NOTE:
+    Errors using api-console-cli@1.0.0. Wait till this bug is fixed https://github.com/mulesoft-labs/api-console-cli/issues/28; Other than that - example works fine (e.g. when using older cli version).
