@@ -23,7 +23,7 @@ go get -u github.com/Jumpscale/go-raml
 
 ## Run
 
-All commands listed here should be run inside `/gopath/src/github.com/myuser/myapi`.
+In this introduction we'll generate Go server. All commands listed here should be run inside `/gopath/src/github.com/myuser/myapi`.
 
 Download example RAML:
 
@@ -31,9 +31,14 @@ Download example RAML:
 wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
 ```
 
-Generate server:
+Generate Go server:
 
 ```sh
-TODO: https://github.com/Jumpscale/go-raml#generating-server
-
+go-raml server -l go --dir /gopath/src/github.com/myuser/myapi --ramlfile api.raml --import-path github.com/myuser/myapi
 ```
+
+Now you can check out generated files:
+
+<script src="https://gist.github.com/postatum/5f7fa9da6f0d6532a4ea27fed7ec304d"></script>
+
+Generated go server can be used as your API server skeleton. It gives you routing code, implementation skeleton, simple request validation, and all struct based on raml types and request/response body. You can then extend the generated code to fit your need.
