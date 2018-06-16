@@ -1,6 +1,6 @@
 package server.ricks;
 
-import example.playground.types.RamlRick;
+import example.playground.types.JsonRick;
 import example.playground.types.Rick;
 import example.playground.resource.Ricks;
 
@@ -10,24 +10,24 @@ import java.util.HashMap;
 
 public class RicksImpl implements Ricks {
 
-  private HashMap<String, RamlRick> ramlRickMap = new HashMap<>();
+  private HashMap<String, JsonRick> jsonRickMap = new HashMap<>();
   private HashMap<String, Rick> rickMap = new HashMap<>();
 
   @Override
   public GetRicksResponse getRicks() {
-    List<RamlRick> ricks = new ArrayList<>(this.ramlRickMap.values());
+    List<Rick> ricks = new ArrayList<>(this.rickMap.values());
     return GetRicksResponse.respond200WithApplicationJson(ricks);
   }
 
   @Override
-  public PostRicksResponse postRicks(RamlRick entity) {
-    this.ramlRickMap.put(entity.getSlug(), entity);
+  public PostRicksResponse postRicks(Rick entity) {
+    this.rickMap.put(entity.getSlug(), entity);
     return PostRicksResponse.respond200WithApplicationJson(entity);
   }
 
   @Override
   public GetRicksBySlugResponse getRicksBySlug(String slug) {
     return GetRicksBySlugResponse.respond200WithApplicationJson(
-        this.rickMap.get(slug));
+        this.jsonRickMap.get(slug));
   }
 }
