@@ -5,7 +5,7 @@ baseUri: https://api.github.com
 mediaType: application/json
 
 types:
-  Rick: !include includes/rick.json
+  JsonRick: !include includes/rick.json
 
 uses:
   RicksLib: includes/ricks-library.raml
@@ -36,4 +36,4 @@ uses:
         200:
           body:
             application/json:
-              type: Rick
+              type: JsonRick
