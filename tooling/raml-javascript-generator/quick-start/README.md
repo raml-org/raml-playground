@@ -6,7 +6,7 @@ license: 'cc-40-by'
 
 # Intro to raml-javascript-generator
 
-This is an introduction to raml-javascript-generator. raml-javascript-generator is a tool that can generate JavaScript API client from RAML.
+This is an introduction to [raml-javascript-generator](https://github.com/mulesoft-labs/raml-javascript-generator). raml-javascript-generator is a tool that can generate JavaScript API client from RAML.
 
 ## Install
 

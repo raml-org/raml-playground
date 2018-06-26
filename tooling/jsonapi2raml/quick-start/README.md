@@ -6,7 +6,7 @@ license: 'cc-40-by'
 
 # Intro to jsonapi2raml
 
-This is an introduction to jsonapi2raml. jsonapi2raml is a thin wrapper around raml-js-parser-2, adding extra properties to the resulting object. Features:
+This is an introduction to [jsonapi2raml](https://github.com/tabone/jsonapi2raml). jsonapi2raml is a thin wrapper around raml-js-parser-2, adding extra properties to the resulting object. Features:
     * Restructures types from [{typeA: {...}}, ...] to {typeA: {}, ...}
 
 ## Install

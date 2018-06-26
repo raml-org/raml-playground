@@ -6,7 +6,7 @@ license: 'cc-40-by'
 
 # Intro to brujula
 
-This is an introduction to brujula. brujula is a Ruby RAML parser aiming for a full version 1.0 support.
+This is an introduction to [brujula](https://github.com/nogates/brujula). brujula is a Ruby RAML parser aiming for a full version 1.0 support.
 
 ## Install
 

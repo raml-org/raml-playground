@@ -6,7 +6,7 @@ license: 'cc-40-by'
 
 # Intro to godoc2api
 
-This is an introduction to godoc2api. godoc2api is a command line tool that helps to turn your golang comments into a RAML 1.0 file describing your API.
+This is an introduction to [godoc2api](https://github.com/florenthobein/godoc2api). godoc2api is a command line tool that helps to turn your golang comments into a RAML 1.0 file describing your API.
 
 ## Install
 

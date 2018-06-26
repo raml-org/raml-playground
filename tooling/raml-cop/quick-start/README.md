@@ -6,7 +6,7 @@ license: 'cc-40-by'
 
 # Intro to raml-cop
 
-This is an introduction to raml-cop. raml-cop is a command line tool for validating RAML files.
+This is an introduction to [raml-cop](https://github.com/thebinarypenguin/raml-cop). raml-cop is a command line tool for validating RAML files.
 
 ## Install
 

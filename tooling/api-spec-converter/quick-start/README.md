@@ -6,7 +6,7 @@ license: 'cc-40-by'
 
 # Intro to API Spec Transformer
 
-This is an introduction to API Spec Transformer. API Spec Transformer is a tool that helps to convert between different API specifications. It currently supports OAS (Swagger 2), RAML 0.8, RAML 1.0, and Postman collections.
+This is an introduction to [API Spec Transformer](https://github.com/stoplightio/api-spec-converter). API Spec Transformer is a tool that helps to convert between different API specifications. It currently supports OAS (Swagger 2), RAML 0.8, RAML 1.0, and Postman collections.
 
 ## Install
 

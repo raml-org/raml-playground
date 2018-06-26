@@ -6,7 +6,7 @@ license: 'cc-40-by'
 
 # Intro to api-console
 
-This is an introduction to api-console. api-console is a tool that generates mobile-friendly web documentation based on RAML documents. In addition to providing documentation, the tool provides the capability for users to try out requests on the fly.
+This is an introduction to [api-console](https://github.com/mulesoft-labs/api-console-cli). api-console is a tool that generates mobile-friendly web documentation based on RAML documents. In addition to providing documentation, the tool provides the capability for users to try out requests on the fly.
 
 ## Install
 

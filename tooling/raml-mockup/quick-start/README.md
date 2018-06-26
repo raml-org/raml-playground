@@ -6,7 +6,7 @@ license: 'cc-40-by'
 
 # Intro to raml-mockup
 
-This is an introduction to raml-mockup. raml-mockup is a tool generates Express-based mocking service for RAML development.
+This is an introduction to [raml-mockup](https://github.com/tacoss/raml-mockup). raml-mockup is a tool generates Express-based mocking service for RAML development.
 
 ## Install
 

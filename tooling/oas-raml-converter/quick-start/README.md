@@ -6,7 +6,7 @@ license: 'cc-40-by'
 
 # Intro to oas-raml-converter
 
-This is an introduction to oas-raml-converter. oas-raml-converter is a command line tool that helps to convert between different API specifications.
+This is an introduction to [oas-raml-converter](https://github.com/mulesoft/oas-raml-converter). oas-raml-converter is a command line tool that helps to convert between different API specifications.
 
 ## Install
 

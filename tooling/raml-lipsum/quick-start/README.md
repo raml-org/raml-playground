@@ -6,7 +6,7 @@ license: 'cc-40-by'
 
 # Intro to raml-lipsum
 
-This is an introduction to raml-lipsum. raml-lipsum is a tool that generates random data from RAML 1.0 type specifications.
+This is an introduction to [raml-lipsum](https://github.com/wavesoft/raml-lipsum). raml-lipsum is a tool that generates random data from RAML 1.0 type specifications.
 
 ## Install
 

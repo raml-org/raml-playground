@@ -6,7 +6,7 @@ license: 'cc-40-by'
 
 # Intro to raml-1-parser
 
-This is an introduction to raml-1-parser. raml-1-parser is a JavaScript RAML parser that supports both RAML 0.8 and 1.0.
+This is an introduction to [raml-1-parser](https://github.com/raml-org/raml-js-parser-2). raml-1-parser is a JavaScript RAML parser that supports both RAML 0.8 and 1.0.
 
 ## Install
 

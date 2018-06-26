@@ -6,7 +6,7 @@ license: 'cc-40-by'
 
 # Intro to go-raml
 
-This is an introduction to go-raml. go-raml is a tool that currently has these features:
+This is an introduction to [go-raml](https://github.com/Jumpscale/go-raml). go-raml is a tool that currently has these features:
     * generate server stub in Go, Python, and Nim from a RAML file;
     * generate complete client library in Go, Python, and Nim from a RAML file;
     * generate `capnp` schema.

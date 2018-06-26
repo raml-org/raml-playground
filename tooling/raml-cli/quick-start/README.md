@@ -6,7 +6,7 @@ license: 'cc-40-by'
 
 # Intro to raml-cli
 
-This is an introduction to raml-cli. raml-cli is a handy command-line tool for RAML enthusiasts. It's features include:
+This is an introduction to [raml-cli](https://github.com/raml-org/raml-cli). raml-cli is a handy command-line tool for RAML enthusiasts. It's features include:
     * Validation of a root RAML document against the specification;
     * Compilation of a root RAML document into a valid OpenAPI 2.0 document;
     * Initialization of a basic RAML document based on user input;

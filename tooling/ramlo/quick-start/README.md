@@ -6,7 +6,7 @@ license: 'cc-40-by'
 
 # Intro to ramlo
 
-This is an introduction to ramlo. ramlo is a command line tool based on Node.js for generating RESTful API documentations written in RAML.
+This is an introduction to [ramlo](https://github.com/PGSSoft/ramlo). ramlo is a command line tool based on Node.js for generating RESTful API documentations written in RAML.
 
 ## Install
 
