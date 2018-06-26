@@ -71,8 +71,6 @@ Mock service running at http://localhost:8080
 
 $ http http://localhost:8080/users/1
 HTTP/1.1 200 OK
-Connection: keep-alive
-Content-Length: 0
 Content-Type: application/json
-Date: Tue, 12 Jun 2018 09:26:36 GMT
+(...)
 ```

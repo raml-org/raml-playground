@@ -33,17 +33,7 @@ Mocked API server is now available at `http://localhost:3000`:
 
 ```sh
 $ http http://localhost:3000/helloworld
-HTTP/1.1 200 OK
-Access-Control-Allow-Headers: Content-Type, Content-Length
-Access-Control-Allow-Methods: *
-Access-Control-Allow-Origin: *
-Access-Control-Expose-Headers: Accept-Ranges, Content-Encoding, Content-Length, Content-Range
-Connection: keep-alive
-Content-Length: 25
-Content-Type: application/json; charset=utf-8
-Date: Tue, 12 Jun 2018 07:52:43 GMT
-ETag: W/"19-xiRlAiCAu+T5Wg8+Nm/uG4L47fI"
-X-Powered-By: Express
+(...)
 
 {
     "message": "Hello world"
