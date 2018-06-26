@@ -12,7 +12,7 @@ This is an introduction to raml-lipsum. raml-lipsum is a tool that generates ran
 
 
 ```sh
-npm install raml-lipsum -g
+$ npm install raml-lipsum -g
 ```
 
 ## Run
@@ -20,19 +20,19 @@ npm install raml-lipsum -g
 Download example RAML:
 
 ```sh
-wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/typesystem/simple.raml
+$ wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/typesystem/simple.raml
 ```
 
 Now from a command-line run:
 
 ```sh
-raml-lipsum ./api.raml User > user-data.json
+$ raml-lipsum ./api.raml User > user-data.json
 ```
 
 It should generate random User data:
 
 ```sh
-cat user-data.json
+$ cat user-data.json
 {
   "firstName": "sint",
   "lastName": "nostrud",

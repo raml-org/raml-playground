@@ -11,15 +11,15 @@ This is an introduction to api-console. api-console is a tool that generates mob
 ## Install
 
 ```sh
-sudo npm install -g api-console-cli
+$ sudo npm install -g api-console-cli
 ```
 
 ## Run
 
 ```sh
-wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
-api-console build ./api.raml
-api-console serve build/
+$ wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
+$ api-console build ./api.raml
+$ api-console serve build/
 ```
 
 

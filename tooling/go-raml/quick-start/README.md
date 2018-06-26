@@ -17,8 +17,8 @@ This is an introduction to go-raml. go-raml is a tool that currently has these f
 Assuming your project is located inside `/gopath/src/github.com/myuser/myapi`:
 
 ```sh
-cd /gopath/src/github.com/myuser/myapi
-go get -u github.com/Jumpscale/go-raml
+$ cd /gopath/src/github.com/myuser/myapi
+$ go get -u github.com/Jumpscale/go-raml
 ```
 
 ## Run
@@ -28,13 +28,13 @@ In this introduction we'll generate Go server. All commands listed here should b
 Download example RAML:
 
 ```sh
-wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
+$ wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
 ```
 
 Generate Go server:
 
 ```sh
-go-raml server -l go --dir /gopath/src/github.com/myuser/myapi --ramlfile api.raml --import-path github.com/myuser/myapi
+$ go-raml server -l go --dir /gopath/src/github.com/myuser/myapi --ramlfile api.raml --import-path github.com/myuser/myapi
 ```
 
 Now you can check out generated files:

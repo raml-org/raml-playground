@@ -11,7 +11,7 @@ This is an introduction to API Spec Transformer. API Spec Transformer is a tool 
 ## Install
 
 ```sh
-npm install api-spec-transformer
+$ npm install api-spec-transformer
 ```
 
 ## Run
@@ -19,7 +19,7 @@ npm install api-spec-transformer
 To convert RAML1.0 to OAS (Swagger), download example RAML:
 
 ```sh
-wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
+$ wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
 ```
 
 Create an `index.js` file with the following code:
@@ -40,5 +40,5 @@ ramlToSwagger.loadFile('./api.raml', (err) => {
 Run it:
 
 ```sh
-node index.js
+$ node index.js
 ```

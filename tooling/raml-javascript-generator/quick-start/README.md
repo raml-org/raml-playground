@@ -12,7 +12,7 @@ This is an introduction to raml-javascript-generator. raml-javascript-generator 
 
 
 ```sh
-npm install raml-javascript-generator -g
+$ npm install raml-javascript-generator -g
 ```
 
 ## Run
@@ -20,13 +20,13 @@ npm install raml-javascript-generator -g
 Download example RAML:
 
 ```sh
-wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
+$ wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
 ```
 
 Generate JavaScript client:
 
 ```sh
-raml-javascript-generator api.raml -o js-client
+$ raml-javascript-generator api.raml -o js-client
 ```
 
 You should now have js client with documentation generated inside `./js-client` folder.
@@ -34,8 +34,8 @@ You should now have js client with documentation generated inside `./js-client` 
 Now you can install it with:
 
 ```sh
-cd js-client
-npm install hello-world
+$ cd js-client
+$ npm install hello-world
 ```
 
 And use it in your JavaScript code:

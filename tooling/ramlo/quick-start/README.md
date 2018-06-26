@@ -11,7 +11,7 @@ This is an introduction to ramlo. ramlo is a command line tool based on Node.js 
 ## Install
 
 ```sh
-npm install -g ramlo
+$ npm install -g ramlo
 ```
 
 ## Run
@@ -19,17 +19,17 @@ npm install -g ramlo
 Download example RAML:
 
 ```sh
-wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/typesystem/simple.raml
+$ wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/typesystem/simple.raml
 ```
 
 Run the command to generate documentation:
 
 ```sh
-ramlo -f api.raml
+$ ramlo -f api.raml
 ```
 
 Now you can browse the generated html:
 
 ```sh
-browse index.html
+$ browse index.html
 ```

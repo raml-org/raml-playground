@@ -11,7 +11,7 @@ This is an introduction to raml-cop. raml-cop is a command line tool for validat
 ## Install
 
 ```sh
-npm install raml-cop -g
+$ npm install raml-cop -g
 ```
 
 ## Run
@@ -19,7 +19,7 @@ npm install raml-cop -g
 Download example RAML:
 
 ```sh
-wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/typesystem/simple.raml
+$ wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/typesystem/simple.raml
 ```
 
 Try to validate it:

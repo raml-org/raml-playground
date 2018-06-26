@@ -12,7 +12,7 @@ This is an introduction to jsonapi2raml. jsonapi2raml is a thin wrapper around r
 ## Install
 
 ```sh
-npm install jsonapi2raml -g
+$ npm install jsonapi2raml -g
 ```
 
 ## Run
@@ -20,13 +20,13 @@ npm install jsonapi2raml -g
 Download example JSON API payload file:
 
 ```sh
-wget https://gist.githubusercontent.com/postatum/2bdba245ceabe5837bf3c2d4c0f23ad8/raw/9355778cb61e33d965d2d6d3efd37713cecbff0a/payload.json
+$ wget https://gist.githubusercontent.com/postatum/2bdba245ceabe5837bf3c2d4c0f23ad8/raw/9355778cb61e33d965d2d6d3efd37713cecbff0a/payload.json
 ```
 
 Now let's generate RAML 1.0 documentation:
 
 ```sh
-jsonapi2raml payload.json usersApi
+$ jsonapi2raml payload.json usersApi
 ```
 
 This will generate big `usersApi.raml` file. You could check out it in your editor or just check it's content with `cat` and `grep` to see that routes were generated:

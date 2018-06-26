@@ -11,7 +11,7 @@ This is an introduction to brujula. brujula is a Ruby RAML parser aiming for a f
 ## Install
 
 ```sh
-gem install brujula
+$ gem install brujula
 ```
 
 ## Run
@@ -19,7 +19,7 @@ gem install brujula
 Download example RAML:
 
 ```sh
-wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/typesystem/simple.raml
+$ wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/typesystem/simple.raml
 ```
 
 Create a file called `example.rb` with the following content:

@@ -11,7 +11,7 @@ This is an introduction to godoc2api. godoc2api is a command line tool that help
 ## Install
 
 ```sh
-go get github.com/florenthobein/godoc2api
+$ go get github.com/florenthobein/godoc2api
 ```
 
 ## Run

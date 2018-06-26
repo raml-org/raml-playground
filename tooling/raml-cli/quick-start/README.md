@@ -16,7 +16,7 @@ This is an introduction to raml-cli. raml-cli is a handy command-line tool for R
 
 
 ```sh
-npm install -g raml-cli
+$ npm install -g raml-cli
 ```
 
 ## Run
@@ -24,7 +24,7 @@ npm install -g raml-cli
 Download example RAML:
 
 ```sh
-wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/typesystem/simple.raml
+$ wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/typesystem/simple.raml
 ```
 
 1. Validate a root RAML document against the specification:

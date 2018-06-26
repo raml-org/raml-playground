@@ -11,7 +11,7 @@ This is an introduction to raml-1-parser. raml-1-parser is a JavaScript RAML par
 ## Install
 
 ```sh
-npm install raml-1-parser
+$ npm install raml-1-parser
 ```
 
 ## Run
@@ -19,7 +19,7 @@ npm install raml-1-parser
 Download example RAML:
 
 ```sh
-wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
+$ wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
 ```
 
 Create new file `index.js` with the following code:
@@ -34,7 +34,7 @@ raml.load('./api.raml').then((apiJSON) => {
 Run it with:
 
 ```sh
-node ./index.js
+$ node ./index.js
 ```
 
 Parsing can also be performed synchronously:

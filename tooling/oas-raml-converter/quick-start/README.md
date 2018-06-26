@@ -11,7 +11,7 @@ This is an introduction to oas-raml-converter. oas-raml-converter is a command l
 ## Install
 
 ```sh
-npm install oas-raml-converter
+$ npm install oas-raml-converter
 ```
 
 ## Run
@@ -19,7 +19,7 @@ npm install oas-raml-converter
 Download example RAML:
 
 ```sh
-wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/typesystem/simple.raml
+$ wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/typesystem/simple.raml
 ```
 
 To convert RAML 1.0 to OAS 2.0 create a file called `index.js` with the following code:
