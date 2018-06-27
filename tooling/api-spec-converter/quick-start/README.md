@@ -19,7 +19,7 @@ $ npm install api-spec-transformer
 To convert RAML1.0 to OAS (Swagger), download example RAML:
 
 ```sh
-$ wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
+$ curl -o api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
 ```
 
 Create an `index.js` file with the following code:

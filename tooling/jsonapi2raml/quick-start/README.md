@@ -20,7 +20,7 @@ $ npm install jsonapi2raml -g
 Download example JSON API payload file:
 
 ```sh
-$ wget https://gist.githubusercontent.com/postatum/2bdba245ceabe5837bf3c2d4c0f23ad8/raw/9355778cb61e33d965d2d6d3efd37713cecbff0a/payload.json
+$ curl https://gist.githubusercontent.com/postatum/2bdba245ceabe5837bf3c2d4c0f23ad8/raw/9355778cb61e33d965d2d6d3efd37713cecbff0a/payload.json
 ```
 
 Now let's generate RAML 1.0 documentation:

@@ -19,7 +19,7 @@ $ npm install -g ramlo
 Download example RAML:
 
 ```sh
-$ wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/typesystem/simple.raml
+$ curl -o api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/typesystem/simple.raml
 ```
 
 Run the command to generate documentation:

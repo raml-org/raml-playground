@@ -19,7 +19,7 @@ $ gem install brujula
 Download example RAML:
 
 ```sh
-$ wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/typesystem/simple.raml
+$ curl -o api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/typesystem/simple.raml
 ```
 
 Create a file called `example.rb` with the following content:

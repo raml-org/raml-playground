@@ -17,7 +17,7 @@ $ sudo npm install -g api-console-cli
 ## Run
 
 ```sh
-$ wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
+$ curl -o api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
 $ api-console build ./api.raml
 $ api-console serve build/
 ```

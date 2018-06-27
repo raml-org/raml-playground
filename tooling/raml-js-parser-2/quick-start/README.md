@@ -19,7 +19,7 @@ $ npm install raml-1-parser
 Download example RAML:
 
 ```sh
-$ wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
+$ curl -o api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
 ```
 
 Create new file `index.js` with the following code:
