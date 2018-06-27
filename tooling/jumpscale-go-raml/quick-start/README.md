@@ -28,7 +28,7 @@ In this introduction we'll generate Go server. All commands listed here should b
 Download example RAML:
 
 ```sh
-$ wget -O api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
+$ curl -o api.raml https://raw.githubusercontent.com/raml-org/raml-examples/master/helloworld/helloworld.raml
 ```
 
 Generate Go server:
