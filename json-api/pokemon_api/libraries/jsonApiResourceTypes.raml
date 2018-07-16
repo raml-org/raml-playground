@@ -1,0 +1,183 @@
+#%RAML 1.0 Library
+uses:
+  types: jsonApiTypes.raml
+
+resourceTypes:
+  collection:
+    usage: |
+      This resourceType should be used for any collection of items.
+      Parameters:
+        dataType: the type name of the primary data
+        exampleCollection: an example of the response for a GET of the collection.
+        exampleItem: an example of the body/response for a POST to the collection.
+    description: The collection of <<resourcePathName>>
+    get:
+      description: Get a collection of <<resourcePathName>>.
+      responses:
+        200:
+          description: Success. Response contains the primary data and optional metadata.
+          body:
+            application/vnd.api+json:
+              type: types.collectionSuccess
+              properties:
+                data: <<dataType>>[]
+              example: <<exampleCollection>>
+        404:
+          description: Not found. Response contains a list of error(s).
+          body:
+            application/vnd.api+json:
+              type: types.failure
+              example:
+                errors:
+                  - status: "404"
+                    title: Resource not found
+                    detail: <<resourcePath>> not found
+    post:
+      description: Create a new <<resourcePathName|!singularize>>.
+      body:
+        application/vnd.api+json:
+          type: object
+          properties:
+            data: <<dataType>>
+          additionalProperties: false
+      responses:
+        201:
+          description: Created. Response contains the created <<resourcePathName|!singularize>>
+            Location header *may* contain the URI.
+          headers:
+            location?: types.uristring
+          body:
+            application/vnd.api+json:
+              type: types.itemSuccess
+              properties:
+                data: <<dataType>>
+              example: <<exampleItem>>
+        202:
+          description: Accepted for processing. Request has not yet completed.
+        204:
+          description: No Content.
+        403:
+          description: Forbidden
+          body:
+            application/vnd.api+json:
+              type: types.failure
+        404:
+          description: Related resource not found
+          body:
+            application/vnd.api+json:
+              type: types.failure
+              example:
+                errors:
+                  - status: "404"
+                    title: Resource not found
+                    detail: related resource not found
+        409:
+          description: Failed to create a resource with a client-generated ID that already exists.
+            Or, the resource object’s type is not among the type(s) that constitute the collection represented by the endpoint.
+            Or, the update would violate other server-enforced constraints including type and id mismatch.
+          body:
+            application/vnd.api+json:
+              type: types.failure
+              example:
+                errors:
+                  - status: "409"
+                    title: Conflict
+  item:
+    usage: |
+      This resourceType should be used for any single items
+      Parameters:
+        dataType: the type name of the primary data (must subclass types.response)
+        relType: the type name of the relationships
+        exampleItem: an example of the types.success response
+    description: The <<resourcePathName>> item
+    get:
+      responses:
+        200:
+          description: Success. Response contains the primary data and optional metadata.
+          body:
+            application/vnd.api+json:
+              type: types.itemSuccess
+              properties:
+                data: <<dataType>>
+              example:
+                <<exampleItem>>
+        404:
+          body:
+            application/vnd.api+json:
+              type: types.failure
+              example:
+                errors:
+                  - status: "404"
+                    title: Resource not found
+                    detail: <<resourcePath>> not found
+    patch:
+      description: Update an existing <<resourcePath|!singularize>>.
+      body:
+        application/vnd.api+json:
+          type: object
+          properties:
+            data: <<dataType>>
+          additionalProperties: false
+      responses:
+        200:
+          description: |
+            The PATCH was accepted and some values may have changed beyond those specified.
+            The response contains the result of those updates.
+          body:
+            application/vnd.api+json:
+              type: types.itemSuccess
+              properties:
+                data: <<dataType>>
+              example: <<exampleItem>>
+        202:
+          description: Accepted for processing. Request has not yet completed.
+        204:
+          description: No Content. Only those changes submitted have been applied.
+        403:
+          description: Forbidden
+          body:
+            application/vnd.api+json:
+              type: types.failure
+        404:
+          description: Not Found
+          body:
+            application/vnd.api+json:
+              type: types.failure
+              example:
+                errors:
+                  - status: "404"
+                    title: Resource not found
+                    detail: <<resourcePath>> not found
+        409:
+          description: Failed to update a resource if that update would violate other server-enforced constraints
+            (such as a uniqueness constraint on a property other than id).
+            Or, the resource object’s type and id do not match the server’s endpoint.
+          body:
+            application/vnd.api+json:
+              type: types.failure
+              example:
+                errors:
+                  - status: "409"
+                    title: Conflict
+    delete:
+      description: Delete an existing <<resourcePath|!singularize>>.
+      responses:
+        200:
+          description: Sucessfully deleted. Top-level meta-data response provided.
+          body:
+            application/vnd.api+json:
+              type: types.info
+        202:
+          description: Accepted for processing. Request has not yet completed.
+        204:
+          description: Sucessfully deleted. No content returned.
+        404:
+          description: Not found.
+          body:
+            application/vnd.api+json:
+              type: types.failure
+              example:
+                errors:
+                  - status: "404"
+                    title: Resource not found
+                    detail: <<resourcePath>> not found
