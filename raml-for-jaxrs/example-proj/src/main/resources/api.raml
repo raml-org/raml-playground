@@ -1,0 +1,39 @@
+#%RAML 1.0
+title: Ricks API
+version: v1
+baseUri: https://api.github.com
+mediaType: application/json
+
+types:
+  JsonRick: !include includes/rick.json
+
+uses:
+  RicksLib: includes/ricks-library.raml
+
+/ricks:
+  description: Crucial information about Ricks
+  get:
+    responses:
+        200:
+          body:
+            application/json:
+              type: RicksLib.Rick[]
+  post:
+    body:
+      application/json:
+        type: RicksLib.Rick
+    responses:
+        200:
+          body:
+            application/json:
+              type: RicksLib.Rick
+
+  /{slug}:
+    uriParameters:
+      slug: string
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              type: JsonRick
