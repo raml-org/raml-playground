@@ -33,7 +33,7 @@ $ oas-raml-converter --from RAML --to OAS30 ./api.raml > api.oas3
 ```
 
 ## Using `oas-raml-converter` as a NodeJS library
-`oas-raml-converter` can also be used as a library! This is particularly useful when processing either the input or the output. Let's see how it works. 
+`oas-raml-converter` can also be used as a library! This is particularly useful when processing either the input or the output. Let's see how it works.
 
 In this scenario, I'll use `oas-raml-converter` to convert from RAML 1.0 to OAS 2.0, and then, use `yamljs` to convert the output to the YAML syntax.
 
